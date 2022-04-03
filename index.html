@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio-DB</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js" defer></script>
+    <script src="js/scrollAnim.js" defer></script>
+    <script src="js/photoSlider.js" defer></script>
+    <script src="js/mainPageInfoButtons.js" defer></script>
+</head>
+<body>
+    <section class="page">
+        <div class="main-page">
+
+            <div class="main-page-info">
+                <h1 class="main-page-name">Daniel</h1>
+                <h1 class="main-page-name">Bober</h1>
+
+                <div class="about-info">
+                    <p>
+                        Dwa lata temu dość spontanicznie zainteresowałem sie tworzeniem gier, doprowadziło to
+                        do tego że aktualnie uczę się także Front-Endu. Chwilowo odstawiłem jednak GameDev na rzecz
+                        tego drugiego. Wszystkiego uczę się sam, najczęściej po godzinach i w weekendy.
+                    </p>
+                </div>
+
+                <div class="contact-info">
+                    <div>
+                        <a href="mailto:daniel.bober@protonmail.com">daniel.bober@protonmail.com</a>
+                    </div>
+                    <div>
+                        <a href="tel:733033662">733 033 662</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="reset-button"></div>
+
+            <div class="info-buttons">
+                <h6 class="info-button" id="about-button">O mnie</h6>
+                <h6 class="info-button" id="contact-button">Kontakt</h6>
+                <h6 class="info-button" id="projects-button">Projekty</h6>
+            </div>
+        </div>
+    </section>
+
+    <section class="game-dev">
+
+        <div class="game-dev-left">
+            <h2>GameDev</h2>
+        </div>
+
+        <div class="game-dev-right">
+
+            <div class="page thin">
+                <div class="mission-mars">
+
+                    <div class="info">
+                        <div class="logo">
+                            <img class="game-icon" src="images/svg/marsIcon.svg">
+                            <h4>Mission<br>Mars</h4>
+
+                        </div>
+
+                        <div class="stats">
+                            <h5>Instalacje</h5>
+                            <h4>19+</h4>
+
+                            <div class="play-store-badge">
+                                <img src="images/svg/PlayStoreBadge_deleted.svg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="txt">
+                        <p>
+                            Był to mój pierwszy projekt w Unity na którym uczyłem sie wszystkich podstaw
+                            silnika, programowania w C# i obsługi programu graficznego.W założeniu gra miała być prosta i mało skomplikowana, wyszła jednak dość spora i
+                            złożona mimo to postanowiłem ją ukończyć co zajęło trochę ponad pół roku.
+                        </p>
+
+                        <p>
+                            Przez chwile była do pobrania w PlayStore ostatecznie jednak postanowiłem ją wycofać ze sklepu.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page thin">
+                <div class="squared">
+
+                    <div class="info">
+                        <div class="logo">
+                            <img class="game-icon" src="images/svg/squaredIcon.svg">
+                            <h4>Squared</h4>
+                        </div>
+
+                        <div class="stats">
+                            <h5>Instalacje</h5>
+                            <h4>2300+</h4>
+                            <a class="play-store-badge" href="https://play.google.com/store/apps/details?id=com.FewBadIdeas.Squared&hl=pl" target="_blank">
+                                <img class="hover" src="images/svg/PlayStoreBadge.svg">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="txt">
+                        <p>
+                            Względem pierwszej gry w tej zostało poprawione UI jak i jego animacje, bardziej też
+                            skupiłem sie na porządku w kodzie i plikach. Ogólna oprawa graficzna też wyszła nieco lepiej niż
+                            w tej poprzedniej, jest także bardziej rozbudowana. Jednak największym jej mankamentem jest podstawowa mechanika
+                            która nie jest zbyt grywalna.Ukończenie jej podobnie jak w przypadku poprzedniej zajęło mi trochę ponad pół roku.
+                        </p>
+                        <p>
+                            Aktualnie można ją zobaczyć w PlayStore klikając w ikonę sklepu na górze.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="front-end">
+
+        <div class="front-end-left">
+            <h2>Front-End</h2>
+        </div>
+
+        <div class="front-end-right">
+
+            <div class="page thin">
+                <div class="html-css">
+
+                    <div class="info">
+                        <h4>HTML/CSS</h4>
+                        <p>
+                            Naukę front-endu zacząłem od HTML-a i CSS-a. Na początku miałem problem ze znalezieniem tematyki projektu,
+                            zaczynałem tworzenie strony dodawałem nowe rzeczy i wielokrotnie przerabiałem. Ostatecznie wyszło tak ,że mam
+                            dużo ponapoczynanych i niedokończonych stron które nie nadają sie do pokazania.
+                        </p>
+                        <p>
+                            Zanim znalazłem tematykę na stronę poznałem te dwa języki na tyle dobrze ,że postanowiłem
+                            pójść krok dalej i zacząłem uczyć sie JS-a.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page thin">
+                <div class="travel-diary">
+
+                    <div class="info">
+                        <h4>Travel Diary</h4>
+
+                        <p>
+                            Jest to dziennik do zapisywania podróży. Pierwotnie projekt miał służyć głównie do nauki JS-a, jednak w trakcie jego tworzenia
+                            zacząłem dodawać i poznawać między innymi NodeJS i TypeScript oraz eksperymentować z GitHub.
+                        </p>
+
+                        <p>
+                            Aktualny stan strony trochę obiega od tego co początkowo planowałem, brakuje kilku rzeczy i ogólnie jest nie
+                            skończona. Przy jej tworzeniu sporo sie nauczyłem jeśli chodzi o JS-a przy okazji poznając też inne rzeczy.
+                            Doprowadzenie jej do stanu jaki początkowo planowałem zajęło by trochę a nie nauczył bym sie przy tym nic nowego
+                            więc postanowiłem nie poświęcać jej więcej czasu i przeznaczyć go na naukę Vue.
+                        </p>
+
+                        <p>
+                            Projekt można zobaczyć tutaj
+                        </p>
+                    </div>
+                    <div class="travel-diary-images-div">
+                        <div class="travel-diary-images">
+
+                            <img class="td-img active" src="images/Sc1.jpg" draggable="false">
+                            <img class="td-img" src="images/Sc2.jpg" draggable="false">
+
+                            <div class="left-arrow">
+                                <img src="images/svg/arrow_L.svg" draggable="false">
+                            </div>
+
+                            <div class="right-arrow">
+                                <img src="images/svg/arrow_R.svg" draggable="false">
+                            </div>
+
+                            <div class="images-button"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="travel-diary-images-big-div">
+            <div class="travel-diary-images-big">
+                <img class="td-img-big active" src="images/Sc1.jpg" draggable="false">
+                <img class="td-img-big" src="images/Sc2.jpg" draggable="false">
+            </div>
+            <div class="black-bg"></div>
+        </div>
+
+    </section>
+    <div class="mobile-screen"><h4>Strona nie posiada wersji mobilnej</h4></div>
+    <div class="back-to-top hidden"><img src="images/svg/skip-arrow.svg"></div>
+</body>
+</html>
