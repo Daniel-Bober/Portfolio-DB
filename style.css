@@ -1,15 +1,15 @@
 /*region main*/
 @font-face {
     font-family: 'popins.thin';
-    src: url(Font/Poppins-Thin.ttf);
+    src: url(font/Poppins-Thin.ttf);
 }
 @font-face {
     font-family: 'popins.light';
-    src: url(Font/Poppins-Light.ttf);
+    src: url(font/Poppins-Light.ttf);
 }
 @font-face {
     font-family: 'popins.extra-light';
-    src: url(Font/Poppins-ExtraLight.ttf);
+    src: url(font/Poppins-ExtraLight.ttf);
 }
 
 * {
@@ -116,7 +116,6 @@ p, a {
 }
 .info-button:hover {
     transform: scale(1.2);
-    /*margin: 35px 0;*/
 }
 .info-button.active {
     transform: scale(1.2);
@@ -327,6 +326,10 @@ p, a {
     font-size: 18px;
     color: var(--lightGray);
     text-align: center;
+}
+.travel-diary .info p a{
+    text-decoration: none;
+    color: rgb(165, 165, 165);
 }
 
 .travel-diary-images {

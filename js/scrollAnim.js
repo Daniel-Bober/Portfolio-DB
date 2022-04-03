@@ -24,8 +24,6 @@ function goToSection(i, anim) {
         if(anim) {
             anim.restart();
         }
-        console.log(i);
-
     }
 }
 

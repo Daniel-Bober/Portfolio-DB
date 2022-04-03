@@ -84,7 +84,6 @@ function mainPageInfoTextAnimIn(className) {
 }
 
 function mainPageInfoTextAnimOut(className) {
-    console.log(clickedButtonNr);
     gsap.timeline({defaults: {duration: 0.3}, onComplete:afterOutAnims})
         .to(className, {
             y: 200,
