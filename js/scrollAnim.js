@@ -85,31 +85,16 @@ function enterSectionSwitch(i) {
             scrollOutAnimation('.game-dev-left h2');
 
             scrollEnterAnimation('.front-end-left h2', 0.5, -50);
-            scrollEnterAnimation('.html-css .info', 0.2, 50);
-            break;
-        case 4:
-            scrollOutAnimation('.html-css .info');
-
             scrollEnterAnimation('.travel-diary .info')
             scrollEnterAnimation('.travel-diary-images', 0.5, 50);
-            break;
-    }
-}
-
-function enterBackSectionSwitch(i) {
-    switch(i) {
-        case 1:
 
             break;
-        case 2:
-
-            break;
-        case 3:
-            scrollOutAnimation('.travel-diary .info')
+        case 4:
+            // scrollOutAnimation('.workflow-app .info');
+            scrollOutAnimation('.travel-diary .info');
             scrollOutAnimation('.travel-diary-images');
 
-            scrollEnterAnimation('.front-end-left h2', 0.5, -50);
-            scrollEnterAnimation('.html-css .info', 0.2, 50);
+            scrollEnterAnimation('.workflow-app .info', 0.2, 50);
             break;
     }
 }
