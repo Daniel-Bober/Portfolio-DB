@@ -14,10 +14,10 @@ function goToSection(i, anim) {
         body.classList.add("scroll-off");
         isScrollAnimPlaying = true;
 
-        gsap.timeline({defaults:{duration: 1.2}, onComplete: removeScrollOff})
+        gsap.timeline({defaults:{duration: 1}, onComplete: removeScrollOff})
             .to(window, {
                 scrollTo: {y: i*innerHeight, autoKill: false},
-                ease: "power3.out"
+                ease: "power2.out"
             })
             .to({}, 0.01, {});
 
@@ -67,40 +67,47 @@ ScrollTrigger.create({
 function enterSectionSwitch(i) {
     switch(i) {
         case 1:
+            scrollEnterAnimation('.feedback-app .header', 0, -500);
+            scrollEnterAnimation('.feedback-app .info', 0.2, 50);
+            scrollEnterAnimation('.front-end-left h2', 0.4, -50);
+
+            showBackButton()
+            break;
+
+        case 2:
+            scrollOutAnimation('.feedback-app .header');
+            scrollOutAnimation('.feedback-app .info');
+
+            scrollEnterAnimation('.travel-diary .header', 0.05, -500);
+            scrollEnterAnimation('.travel-diary .info', 0.2, 50);
+            break;
+
+        case 3:
+            scrollOutAnimation('.travel-diary .header');
+            scrollOutAnimation('.travel-diary .info');
+
+            scrollEnterAnimation('.workflow-app .header', 0.05, -500);
+            scrollEnterAnimation('.workflow-app .info', 0.2, 50);
+            break;
+
+        case 4:
             scrollEnterAnimation('.mission-mars .info');
             scrollEnterAnimation('.mission-mars .txt', 0.2, 50);
             scrollEnterAnimation('.game-dev-left h2', 0.4, -50);
-            showBackButton()
             break;
-        case 2:
+
+        case 5:
             scrollOutAnimation('.mission-mars .info');
             scrollOutAnimation('.mission-mars .txt');
 
             scrollEnterAnimation('.squared .info', 0.2, -220);
             scrollEnterAnimation('.mission-mars .txt', 0.3, -320);
             break;
-        case 3:
-            scrollOutAnimation('.squared .info');
-            scrollOutAnimation('.squared .txt');
-            scrollOutAnimation('.game-dev-left h2');
-
-            scrollEnterAnimation('.front-end-left h2', 0.5, -50);
-            scrollEnterAnimation('.travel-diary .info')
-            scrollEnterAnimation('.travel-diary-images', 0.5, 50);
-
-            break;
-        case 4:
-            // scrollOutAnimation('.workflow-app .info');
-            scrollOutAnimation('.travel-diary .info');
-            scrollOutAnimation('.travel-diary-images');
-
-            scrollEnterAnimation('.workflow-app .info', 0.2, 50);
-            break;
     }
 }
 
 function scrollEnterAnimation(element, delay, y = -400) {
-    gsap.from(element, {y: y, opacity:0, delay: delay})
+    gsap.from(element, {duration:0.75, y: y, opacity:0, delay: delay, ease: "power2.out"})
 }
 
 function scrollOutAnimation(element, delay, y = 300) {
